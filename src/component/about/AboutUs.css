@@ -1,0 +1,106 @@
+.mainAbouUs{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.serviceAbouUs{
+    background-color: var(--blue1);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 20px -15px black;
+    z-index: 1;
+    transition: transform 0.7s;
+}
+.service-logoAbouUs{
+    width: 130px;
+    height: 130px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background: var(--blue0);
+    margin: -90px auto 0;
+}
+.service-logoAbouUs img{
+    width: 50px;
+    margin-top: 30px;
+}
+.serviceAbouUs h4{
+    height: 35px;
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    background: -webkit-linear-gradient(var(--blue3),var(--blue2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--blue1);
+}
+.serviceAbouUs p,.AboutUsTitleP{
+    color: var(--blue3);
+    font-weight: 400;
+}
+.serviceAbouUs h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background:linear-gradient(to right,var(--blue0),var(--blue1));
+    position: absolute;
+    border-radius: 20px;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.serviceAbouUs h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background:linear-gradient(to right,var(--blue1),var(--blue0));
+    position: absolute;
+    border-radius: 20px;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadow1AbouUs{
+    height: 200px;
+    width: 80%;
+    background-color: var(--blue1);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+}
+.shadow2AbouUs{
+    height: 200px;
+    width: 64%;
+    background-color: var(--blue1);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+.mainAbouUs:hover .serviceAbouUs{
+    transform: translateY(-50px);
+}
+.mainAbouUs:hover .shadow1AbouUs{
+    transform: translateY(-25px);
+}
+.AboutUsCard{
+    margin-top: 130px;
+}
+@media (max-width:600px) {
+    .AboutUsCard{
+        margin-top: 50px;
+    }
+}
+.aboutUsCompanyName{
+    font-size: 20px;
+    background: -webkit-linear-gradient(var(--blue3),var(--blue2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}

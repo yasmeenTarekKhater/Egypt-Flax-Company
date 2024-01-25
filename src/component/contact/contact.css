@@ -1,0 +1,19 @@
+table {
+    line-height: 2rem;
+}
+table tr td{
+    color: var(--blue3);
+    font-weight: bold;
+}
+table tr td a, table tr td span{
+    color: var(--blue2);
+}
+
+iframe{
+    height: 450px;
+    border: 0;
+    width: 100%;
+}
+.contact-us{
+    background-color: var(--blue1);
+}

@@ -1,0 +1,83 @@
+.products_title h1{
+    /* color: var(--blue3); */
+    background: -webkit-linear-gradient(var(--blue3),var(--blue2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.title_line{
+    width: 100px;
+    height: 7px;
+    background: rgb(15,16,53);
+    background: linear-gradient(90deg, rgba(15,16,53,1) 0%, rgba(54,84,134,1) 50%);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: auto;
+}
+.firstCatergoryTitle h3{
+    color: var(--blue3);
+}
+.firstCatergoryTitle span{
+    color: var(--blue2);
+    font-weight: bold;
+}
+.firstCatergoryTitle div{
+    width: 100px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: var(--blue2);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.categoryTypeTitleNumber{
+    background-color: var(--blue2);
+    color: var(--blue0);
+    font-weight: bold;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid var(--blue3);
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.4), 
+           inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.categoryTypeTitle h5,.categoryTypeTitle span,.categoryTypeTitleTwo{
+    color: var(--blue2);
+}
+.categoryTypeContentImg{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--blue0);
+    overflow: hidden;
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), 
+           inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.categoryTypeContentImg img{
+    width: 100%;
+    height: 140px;
+    transition: 1s;
+}
+.categoryTypeContentImg img:hover{
+transform: scale(1.2);
+}
+.categoryTypeContentUses{
+color: var(--blue2);
+}
+.categoryTypeContentUses ul{
+    list-style-type:circle;
+}
+.categoryTypeContentUses ul li{
+    transition: 0.5s;
+}
+.categoryTypeContentUses ul li:hover{
+    cursor: pointer;
+    color: var(--blue3);
+    font-weight: bold;
+}
+.height{
+    height: 75px;
+}
+/* --------------------------end of category one-------------------------------- */
+.CategoryTwoDescribtion{
+    color: var(--blue2);
+    margin-top: 10px;
+}
+/* --------------------------end of category two-------------------------------- */
