@@ -10,9 +10,9 @@ const OtherProducts = (props) => {
       <div className="firstCatergoryContent mt-4 mx-auto">
         <div className="mt-4 categoryTypeContent">
           <div className="row mt-4 categoryTypeContent justify-content-center">
-            <div className="col-10 col-lg-5 categoryTypeContentImg">
+            <div className="col-10 col-lg-4 categoryTypeContentImg">
               {data.image.map((img) => (
-                <img src={img} alt="flaxProduct" className="rounded" />
+                <img src={img} alt="flaxProduct" className="rounded" key={img} />
               ))}
             </div>
             <div className="col-10 col-lg-6 d-flex my-auto categoryTypeContentUses">

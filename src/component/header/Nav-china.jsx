@@ -7,10 +7,10 @@ export default function NavChina() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg fixed-top">
+      <nav className="navbar navbar-expand-md fixed-top">
         <div className="container">
           <Link className="navbar-brand" to="">
-            <img src="./images/logo.png" className="col-3" alt="" />
+            <img src="./images/logo.png" width={'120px'} className="mt-md-3 mt-0" alt="logo" />
           </Link>
           <button
             className="navbar-toggler "
@@ -24,7 +24,7 @@ export default function NavChina() {
           </button>
           <div
             className="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
@@ -82,18 +82,21 @@ export default function NavChina() {
                     聯絡我們
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink className="mx-lg-2 nav-link">
-                  <select
-                    class="border-0 p-1"
-                    onChange={(e)=>setLanguage(e.target.value)}
-                  >
-                    <option value="china">China</option>
-                    <option value="en">English</option>
-                  </select>
-                  </NavLink>
-                </li>
               </ul>
+              <li class="nav-item dropdown d-flex align-items-center me-5">
+          <a class="nav-link dropdown-toggle" href="#/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-globe"></i>
+
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li onClick={(e)=>setLanguage('en')}>
+              <a class="dropdown-item" href="#/">English</a>
+            </li>
+            <li onClick={(e)=>setLanguage('china')}>
+            <a class="dropdown-item" href="#/">Chinese</a>
+            </li>
+          </ul>
+        </li>
             </div>
           </div>
         </div>

@@ -34,6 +34,8 @@ export const flax_row_material=[
 export const pluming_flax=[
     {
         id:3,
+        header:"Plumbing Flax",
+        types:"We Have Two Types",
         title:"Flax Dolls",
         description:"Made from hackled long fiber, super hackling and it can be 2 head, 4 head, 6 head",
         use:"plumbing",
@@ -50,6 +52,8 @@ export const pluming_flax=[
 export const flax_sliver=[
     {
         id:5,
+        header:"Flax Sliver",
+        types:"We Have Two Types",
         title:"Flax sliver with natural color",
         use:"spinning",
         image:"./images/product3-1.jpg"

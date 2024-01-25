@@ -1,16 +1,20 @@
+import { useContext } from "react";
+import { LangContext } from "../context/language";
 const FlaxSliver = (props) => {
-  const {data}=props;
+  const { data } = props;
+  const { language } = useContext(LangContext);
+
   return (
     <div className="firstCatergoryContainer mt-4">
       <div className="firstCatergoryTitle mb-4">
-        <h3>Flax Sliver</h3>
-        <span> we have two types </span>
+        <h3>{data[0].header}</h3>
+        <span>{data[0].types}</span>
         <div></div>
       </div>
       <div className="firstCatergoryContent mt-4 row justify-content-center gap-4  mx-auto">
         {data.map((product) => {
           return (
-            <div className=" col-11 col-lg-5">
+            <div className=" col-11 col-lg-5" key={product.id}>
               <div className="row categoryTypeTitleContainer">
                 <div className="col-1 categoryTypeTitleNumber h-75">
                   {product.id}
@@ -28,8 +32,7 @@ const FlaxSliver = (props) => {
                   />
                 </div>
                 <div className=" col-10 col-md-2 mt-2 mt-md-0 categoryTypeContentUses">
-                  <h6>Uses</h6>
-
+                  <h5>{language === "en" ? "Uses" : "用途"}</h5>
                   <ul>
                     <li>{product.use}</li>
                   </ul>

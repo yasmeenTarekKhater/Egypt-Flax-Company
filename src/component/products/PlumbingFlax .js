@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
+import { LangContext } from "../context/language";
 const PlumbingFlax = (props) => {
   const {data}=props;
   const TypeOne = data[0];
   const TypeTwo = data[1];
   const [mainImage, setMainImage] = useState(data[1].image[0]);
   const [smallImage, setSmallImage] = useState(data[1].image[1]);
+  const { language } = useContext(LangContext);
+
 
   const handleSmallImageClick = (image) => {
     setMainImage(image);
@@ -13,8 +16,8 @@ const PlumbingFlax = (props) => {
   return (
     <div className="firstCatergoryContainer mt-4">
       <div className="firstCatergoryTitle mb-4">
-        <h3>Plumbing flax</h3>
-        <span> we have two types </span>
+        <h3>{TypeOne.header}</h3>
+        <span> {TypeOne.types} </span>
         <div></div>
       </div>
 
@@ -36,13 +39,13 @@ const PlumbingFlax = (props) => {
               />
             </div>
             <div className="col-10 col-md-2 mt-2 categoryTypeContentUses">
-              <h6>Uses</h6>
+            <h5>{language === "en" ? "Uses" : "用途"}</h5>
               <ul>
                 <li>{TypeOne.use}</li>
               </ul>
             </div>
           </div>
-          <p className="CategoryTwoDescribtion">{TypeOne.description}</p>
+          <p className="CategoryTwoDescribtion w-75">{TypeOne.description}</p>
 
         </div>
         <div className=" col-11 col-lg-5">
@@ -58,7 +61,7 @@ const PlumbingFlax = (props) => {
               <img src={mainImage} alt="flaxProduct" className="rounded" />
             </div>
             <div className="col-10 col-md-2 mt-2 categoryTypeContentUses">
-              <h6>Uses</h6>
+            <h5>{language === "en" ? "Uses" : "用途"}</h5>
               <ul>
                 <li>{TypeTwo.use}</li>
               </ul>
@@ -74,7 +77,7 @@ const PlumbingFlax = (props) => {
               </div>
             </div>
           </div>
-          <p className="CategoryTwoDescribtion">{TypeTwo.description}</p>
+          <p className="CategoryTwoDescribtion w-75">{TypeTwo.description}</p>
         </div>
       </div>
     </div>

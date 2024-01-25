@@ -14,6 +14,7 @@ export default function Contact() {
               <div className="col-md-6 align-self-center text-center ">
                 <div className="bg-white shadow p-2 rounded d-flex justify-content-center my-3">
                   <table className="">
+                    <tbody>
                     <tr className="">
                       <td>Email</td>
                       <td>:</td>
@@ -78,6 +79,8 @@ export default function Contact() {
                         <span> shobramils - El Gharbia </span>
                       </td>
                     </tr>
+                    </tbody>
+                    
                   </table>
                 </div>
               </div>
@@ -85,9 +88,10 @@ export default function Contact() {
                 <div>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13701.65511553942!2d31.18539313813618!3d30.847088314849465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7bee96630f295%3A0x4b596cc7b2e7e9be!2sShubra%20Milis%2C%20Shubra%20Melas%2C%20Zefta%2C%20Gharbia%20Governorate!5e0!3m2!1sen!2seg!4v1705929441331!5m2!1sen!2seg"
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="location"
                   ></iframe>
                 </div>
               </div>

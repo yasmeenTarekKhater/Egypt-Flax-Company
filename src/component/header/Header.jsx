@@ -17,7 +17,7 @@ export default function Header() {
           <span >{text} </span>
           <span><Cursor/> </span>
         </h1>
-        <Link className='btn btn1 mt-3' to='/products'>show products</Link>
+        <Link className='btn btn1 mt-3' to='/products'>Show Products</Link>
       </div>
     </div>
   )
