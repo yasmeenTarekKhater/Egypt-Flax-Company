@@ -1,6 +1,7 @@
-.footer{
-    width: 100%;
+.footer-background{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: var(--blue0);
+    background: linear-gradient(90deg, var(--blue2) 0%, var(--blue1) 50%);
     color: var(--blue0);
-    background-color: var(--blue2);
-    text-align: center;
 }
