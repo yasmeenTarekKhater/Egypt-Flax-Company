@@ -10,37 +10,22 @@ import Footer from "./component/footer/Footer";
 import Home from "./component/header/Home";
 import HomeChina from "./component/header/Home-china";
 import Nav from "./component/header/Nav";
-import NavChina from "./component/header/Nav-china";
 import Products from "./component/products/Products";
+
 function App() {
-  const [language,setLanguage]=useState("en")
+  const [language, setLanguage] = useState("en");
   return (
     <>
       <BrowserRouter>
-        <LangContext.Provider value={{language,setLanguage}}>
+        <LangContext.Provider value={{ language, setLanguage }}>
           <div>
-            {language==="en"?
-            <>
-            <Nav />
+            <Nav/>
             <Routes>
-              <Route path="" element={<Home />} />
+              <Route path="/" element={language==='en'?<Home />:<HomeChina/>} />
               <Route path="/products" element={<Products />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={language==='en'?<Contact />:<ContactChina/>} />
+              <Route path="/about" element={language==='en'?<AboutUs />:<AboutUsChina/>} />
             </Routes>
-            </>
-            :
-            <>
-            <NavChina/>
-            <Routes>
-              <Route path="" element={<HomeChina/>} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/contact" element={<ContactChina />} />
-              <Route path="/about" element={<AboutUsChina />} />
-            </Routes>
-            </>
-            }
-            
             <Footer />
           </div>
         </LangContext.Provider>

@@ -1,5 +1,7 @@
-import { useState,useContext } from "react";
+import { useState,useContext, useEffect } from "react";
 import { LangContext } from "../context/language";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const PlumbingFlax = (props) => {
   const {data}=props;
   const TypeOne = data[0];
@@ -7,7 +9,11 @@ const PlumbingFlax = (props) => {
   const [mainImage, setMainImage] = useState(data[1].image[0]);
   const [smallImage, setSmallImage] = useState(data[1].image[1]);
   const { language } = useContext(LangContext);
-
+  useEffect(()=>{
+    AOS.init({
+      duration:"1000"
+    })
+  })
 
   const handleSmallImageClick = (image) => {
     setMainImage(image);
@@ -15,14 +21,14 @@ const PlumbingFlax = (props) => {
   };
   return (
     <div className="firstCatergoryContainer mt-4">
-      <div className="firstCatergoryTitle mb-4">
+      <div className="firstCatergoryTitle mb-4" data-aos="fade-right">
         <h3>{TypeOne.header}</h3>
         <span> {TypeOne.types} </span>
         <div></div>
       </div>
 
       <div className="firstCatergoryContent mt-4 row justify-content-center gap-4 mx-auto">
-        <div className=" col-11 col-lg-5">
+        <div className=" col-11 col-lg-5"data-aos="fade-right" >
           <div className="row categoryTypeTitleContainer">
             <div className="col-1 categoryTypeTitleNumber h-75">{TypeOne.id}</div>
             <div className="col-10 categoryTypeTitle">
@@ -48,7 +54,7 @@ const PlumbingFlax = (props) => {
           <p className="CategoryTwoDescribtion w-75">{TypeOne.description}</p>
 
         </div>
-        <div className=" col-11 col-lg-5">
+        <div className=" col-11 col-lg-5" data-aos="fade-left">
           <div className="row categoryTypeTitleContainer">
             <div className="col-1 categoryTypeTitleNumber h-75">{TypeTwo.id}</div>
             <div className="col-10 categoryTypeTitle">

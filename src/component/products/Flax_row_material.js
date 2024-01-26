@@ -1,21 +1,27 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LangContext } from "../context/language";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const FlaxRowMaterial = (props) => {
   const { data } = props;
   const TypeOne = data[0];
   const TypeTwo = data[1];
   const { language } = useContext(LangContext);
+  useEffect(()=>{
+    AOS.init({
+      duration:"1000"
+    })
+  })
   return (
     <div className="firstCatergoryContainer mt-4">
-      <div className="firstCatergoryTitle mb-4">
+      <div className="firstCatergoryTitle mb-4" data-aos="fade-right">
         <h3>{TypeOne.header}</h3>
         <span> {TypeOne.types}</span>
         <div></div>
       </div>
 
       <div className="firstCatergoryContent mt-4 row justify-content-center gap-4 mx-auto">
-        <div className=" col-11 col-lg-5">
+        <div className=" col-11 col-lg-5" data-aos="fade-right">
           <div className="row categoryTypeTitleContainer">
             <div className="col-1 categoryTypeTitleNumber h-75">
               {TypeOne.id}
@@ -44,7 +50,7 @@ const FlaxRowMaterial = (props) => {
             </div>
           </div>
         </div>
-        <div className="col-11 col-lg-5">
+        <div className="col-11 col-lg-5" data-aos="fade-left">
           <div className="row categoryTypeTitleContainer">
             <div className="col-1 categoryTypeTitleNumber h-75">
               {TypeTwo.id}

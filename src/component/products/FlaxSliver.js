@@ -1,12 +1,18 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LangContext } from "../context/language";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const FlaxSliver = (props) => {
   const { data } = props;
   const { language } = useContext(LangContext);
-
+  useEffect(()=>{
+    AOS.init({
+      duration:"1000"
+    })
+  })
   return (
     <div className="firstCatergoryContainer mt-4">
-      <div className="firstCatergoryTitle mb-4">
+      <div className="firstCatergoryTitle mb-4" data-aos="fade-right">
         <h3>{data[0].header}</h3>
         <span>{data[0].types}</span>
         <div></div>
@@ -14,7 +20,7 @@ const FlaxSliver = (props) => {
       <div className="firstCatergoryContent mt-4 row justify-content-center gap-4  mx-auto">
         {data.map((product) => {
           return (
-            <div className=" col-11 col-lg-5" key={product.id}>
+            <div className=" col-11 col-lg-5" key={product.id} data-aos="fade-right">
               <div className="row categoryTypeTitleContainer">
                 <div className="col-1 categoryTypeTitleNumber h-75">
                   {product.id}

@@ -10,6 +10,9 @@
     font-weight: bold;
 }
 @media (min-width:991px){
+.logo{
+    transform: translateY(8%) !important;
+}
 .nav-link::before{
     content: "";
     position: absolute;
@@ -27,12 +30,21 @@
     visibility: visible;
 }
 }
+@media (min-width:260px){
+    .logo{
+        transform: translateY(-20%);
+}
+    .navbar-toggler{
+        transform: translateY(-65%);
+    }
+}
 .navbar{
     background-color: var(--blue0);
     height: 70px;
-    margin: 20px;
+    margin:0 20px;
     border-radius: 16px;
     padding: 0.5rem;
+    box-shadow: 3px 3px 4px var(--blue2);
 }
 
 .header{
@@ -78,9 +90,13 @@
     transition: 0.3s all;
     border: 3px solid var(--blue3);
 }
+.welcomeContainer{
+    border-bottom: 2px solid rgb(0, 1, 24);
+    border-top: 2px solid rgba(54,84,134,1);
+    border-radius: 20px;
+}
 .welcome{
     padding: 10px;
-    /* transform:translateY(-50%); */
     justify-content: center;
     font-weight: 500;
     margin: auto;

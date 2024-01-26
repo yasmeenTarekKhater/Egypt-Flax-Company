@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
 import HeaderChina from "./Header-china";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 export default function HomeChina() {
-
+  useEffect(()=>{
+    AOS.init({
+      duration:"1000"
+    })
+  })
   return (
     <div>
       <HeaderChina />
       <div className="container my-5">
-        <div className="row justify-content-center my-5">
-          <div className="col-md-6 shadow">
+        <div className="row justify-content-center my-5" data-aos="flip-left">
+          <div className="col-md-8 welcomeContainer" >
             <div className="text-center  p-4">
               <p className="welcome col-10 ">
                 歡迎來到埃及亞麻，亞麻行業的主要公司
@@ -24,25 +30,33 @@ export default function HomeChina() {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center home-about-translat">
-          <div className="col-md-6 text-center home-about shadow">
-            <div className="translate-middle-y my-0 py-0">
-              <img
-                src={"./images/group.png"}
-                alt=""
-                className="rounded-circle col-2 shadow p-2 bg-white"
-              />
+        
+        <div className="row justify-content-center my-5 " data-aos="flip-right">
+          <div className="col-lg-8 col-md-9  p-5 shadow">
+            <div className="row">
+              <div className="col-md-5 ">
+                <div className="">
+                  <img src="./images/homeAbout.jpg" className="w-100" alt="" />
+                </div>
+              </div>
+              <div className="col-md-7 align-self-center">
+                <div className="">
+                  <p className="about-p">
+                  經過 23 年的經驗積累，我們繼續努力擴大業務、產能並生產更優質的產品，現已成為領先的亞麻生產商和製造商之一
+                  </p>
+                  <Link to="/about" className="btn about ">
+                  關於我們
+            </Link>
+                </div>
+              </div>
+
             </div>
-            <div className="mt-0 pt-0 px-4">
-              <p className="about-p">
-              經過 23 年的經驗積累，我們繼續努力擴大業務、產能並生產更優質的產品，現已成為領先的亞麻生產商和製造商之一
-              </p>
-              <Link to="/about" className="btn about mb-3">
-              關於我們
-              </Link>
-            </div>
+
+            
           </div>
         </div>
+        
+      
       </div>
     </div>
   );

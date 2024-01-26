@@ -9,10 +9,10 @@ export default function Nav() {
   
   return (
     <div>
-      <nav className="navbar navbar-expand-md fixed-top">
+      <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
           <Link className="navbar-brand " to="">
-            <img src="./images/logo.png" width={'120px'} className="mt-md-3 mt-0" alt="logo" />
+            <img src="./images/logo.ico"  className="logo w-100" alt="logo" />
           </Link>
           <button
             className="navbar-toggler "
@@ -32,7 +32,7 @@ export default function Nav() {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                Egypt Flax
+                {language==='en'?'Egypt Flax':'埃及亞麻'}
               </h5>
               <button
                 type="button"
@@ -51,7 +51,7 @@ export default function Nav() {
                     aria-current="page"
                     to="/"
                   >
-                    Home
+                    {language==='en'?'Home':'家'}
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -61,7 +61,7 @@ export default function Nav() {
                     }
                     to="./products"
                   >
-                    Products
+                    {language==='en'?'Products':'產品'}
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -71,7 +71,7 @@ export default function Nav() {
                     }
                     to="/about"
                   >
-                    About us
+                    {language==='en'?'About us':'關於我們'}
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -81,21 +81,21 @@ export default function Nav() {
                     }
                     to="/contact"
                   >
-                    Contact us
+                    {language==='en'?'Contact us':'關於我們'}
                   </NavLink>
                 </li>
                 
               </ul>
-              <li class="nav-item dropdown d-flex align-items-center me-5">
-          <a class="nav-link dropdown-toggle" href="#/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-solid fa-globe"></i>
+              <li className="nav-item dropdown d-flex align-items-center me-5">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i className="fa-solid fa-globe"></i>
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li onClick={(e)=>setLanguage('en')}>
-              <a class="dropdown-item" href="#/">English</a>
+              <a className="dropdown-item" href="#/" >English</a>
             </li>
             <li onClick={(e)=>setLanguage('china')}>
-            <a class="dropdown-item" href="#/">Chinese</a>
+            <a className="dropdown-item" href="#/" >Chinese</a>
             </li>
           </ul>
         </li>
