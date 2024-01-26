@@ -37,10 +37,10 @@ const Products = () => {
         <PlumbingFlax data={language==="en"? pluming_flax: pluming_flax_chines} />
         <FlaxSliver data={language==="en"? flax_sliver:flax_sliver_chines} />
         
-        <OtherProducts data={language==="en"? flax_waste:flax_waste_chines} dirction='right'/>
-        <OtherProducts data={language==="en"?cottonseed_flax :cottonseed_flax_chines} dirction='left'/>
-        <OtherProducts data={language==="en"? yarn_flax:yarn_flax_chines} dirction='right'/>
-        
+        <OtherProducts data={language==="en"? flax_waste:flax_waste_chines} />
+        <OtherProducts data={language==="en"?cottonseed_flax :cottonseed_flax_chines} />
+        <OtherProducts data={language==="en"? yarn_flax:yarn_flax_chines}/>
+         
         
     </div>
     );

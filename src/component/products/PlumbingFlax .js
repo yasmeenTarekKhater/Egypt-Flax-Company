@@ -28,7 +28,7 @@ const PlumbingFlax = (props) => {
       </div>
 
       <div className="firstCatergoryContent mt-4 row justify-content-center gap-4 mx-auto">
-        <div className=" col-11 col-lg-5"data-aos="fade-right" >
+        <div className=" col-11 col-lg-5"data-aos="fade-top" >
           <div className="row categoryTypeTitleContainer">
             <div className="col-1 categoryTypeTitleNumber h-75">{TypeOne.id}</div>
             <div className="col-10 categoryTypeTitle">
@@ -54,7 +54,7 @@ const PlumbingFlax = (props) => {
           <p className="CategoryTwoDescribtion w-75">{TypeOne.description}</p>
 
         </div>
-        <div className=" col-11 col-lg-5" data-aos="fade-left">
+        <div className=" col-11 col-lg-5" data-aos="fade-down">
           <div className="row categoryTypeTitleContainer">
             <div className="col-1 categoryTypeTitleNumber h-75">{TypeTwo.id}</div>
             <div className="col-10 categoryTypeTitle">
