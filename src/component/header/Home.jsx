@@ -21,10 +21,10 @@ export default function Home() {
                 Welcome to Egypt flax, The major company in the flax industry
               </p>
               <p className="welcome-p">
-                We introduce a variety of heigh quality flax fiber in Egypt<span> </span>
+                We introduce a variety of high quality flax fiber in Egypt<span> </span>
                 “Flax raw material , Plumbing flax , Flax spools , Flax sliver ,
-                flax waste , Cottonseed flax , Flax yarn & twines “<br/> Please,
-                don’t hesitate to contact us if you need any assistant
+                flax waste , Cottonised flax , Flax yarn & twines “<br/> Please,
+                don’t hesitate to contact us if you need any assistance
               </p>
               <Link className="btn contact" to="/contact">
                 Contact us
@@ -39,7 +39,7 @@ export default function Home() {
             <div className="row">
               <div className="col-md-5 ">
                 <div className="">
-                  <img src="./images/homeAbout.jpg" className="w-100" alt="aboutus" />
+                  <img src="./images/product2-1.jpg" className="w-100  rounded-3 shadow" alt="aboutus" />
                 </div>
               </div>
               <div className="col-md-7 align-self-center">

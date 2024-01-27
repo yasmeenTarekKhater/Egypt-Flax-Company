@@ -38,7 +38,7 @@ const FlaxSliver = (props) => {
                   />
                 </div>
                 <div className=" col-10 col-md-2 mt-2 mt-md-0 categoryTypeContentUses">
-                  <h5>{language === "en" ? "Uses" : "用途"}</h5>
+                <h5>{language === "en" ? "Usages" : "用法"}</h5>
                   <ul>
                     <li>{product.use}</li>
                   </ul>

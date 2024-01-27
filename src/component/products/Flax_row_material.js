@@ -40,7 +40,7 @@ const FlaxRowMaterial = (props) => {
               <img src={TypeOne.image} alt="flaxProduct" className="rounded" />
             </div>
             <div className="col-10 col-md-2 mt-2 mt-md-0 categoryTypeContentUses">
-              <h5>{language === "en" ? "Uses" : "用途"}</h5>
+              <h5>{language === "en" ? "Usages" : "用法"}</h5>
 
               <ul>
                 {TypeOne.use.map((u, i) => (
@@ -72,7 +72,7 @@ const FlaxRowMaterial = (props) => {
                   />
                 </div>
                 <div className="col-10 col-md-3 mt-2 categoryTypeContentUses">
-                  <h5>{language === "en" ? "Uses" : "用途"}</h5>
+                <h5>{language === "en" ? "Usages" : "用法"}</h5>
                   <ul>
                     {product.use.map((u, i) => (
                       <li key={i}>{u}</li>

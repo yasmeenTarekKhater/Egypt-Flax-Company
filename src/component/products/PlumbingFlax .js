@@ -45,7 +45,7 @@ const PlumbingFlax = (props) => {
               />
             </div>
             <div className="col-10 col-md-2 mt-2 categoryTypeContentUses">
-            <h5>{language === "en" ? "Uses" : "用途"}</h5>
+            <h5>{language === "en" ? "Usages" : "用法"}</h5>
               <ul>
                 <li>{TypeOne.use}</li>
               </ul>
@@ -67,7 +67,7 @@ const PlumbingFlax = (props) => {
               <img src={mainImage} alt="flaxProduct" className="rounded" />
             </div>
             <div className="col-10 col-md-2 mt-2 categoryTypeContentUses">
-            <h5>{language === "en" ? "Uses" : "用途"}</h5>
+            <h5>{language === "en" ? "Usages" : "用法"}</h5>
               <ul>
                 <li>{TypeTwo.use}</li>
               </ul>

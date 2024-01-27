@@ -11,9 +11,11 @@ export default function Nav() {
     <div>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <Link className="navbar-brand " to="">
-            <img src="./images/logo.ico"  className="logo w-100" alt="logo" />
+          <Link className="navbar-brand" to="/">
+              <img src="./images/FlaxEgyptFinal.png"  className="logo " alt="logo" />
+              <span className="companyName">Egypt Flax</span>
           </Link>
+         
           <button
             className="navbar-toggler "
             type="button"

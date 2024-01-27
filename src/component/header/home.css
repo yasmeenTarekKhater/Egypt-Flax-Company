@@ -9,6 +9,18 @@
     color:var(--blue3) !important;
     font-weight: bold;
 }
+.companyName{
+position: absolute;  
+top: 20px;  
+font-family:Georgia, 'Times New Roman', Times, serif;
+background: -webkit-linear-gradient(var(--blue3),var(--blue2));
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
+font-weight: bold;
+}
+.logo{
+    width: 90px;
+}
 @media (min-width:991px){
 .logo{
     transform: translateY(8%) !important;
@@ -51,6 +63,7 @@
     background-image: url('../../../public/images/bg2.webp');
     background-size: cover;
     width: 100%;
+    height: 100vb;
     background-position: center;
 }
 .header::before{

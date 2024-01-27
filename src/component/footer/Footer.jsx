@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="w-100 mx-auto mt-5">
         <footer class="footer-background text-center text-white">
           <img
-            src="./images/FlaxEgyptFinal_-removebg-preview.png"
+            src="./images/FlaxEgyptFinal.png"
             width={"150px"}
             alt="logo"
             data-aos="zoom-in"
