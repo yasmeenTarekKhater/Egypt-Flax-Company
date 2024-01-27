@@ -36,7 +36,7 @@ export default function HomeChina() {
             <div className="row">
               <div className="col-md-5 ">
                 <div className="">
-                  <img src="./images/product2-1.jpg" className="w-100" alt="aboutus" />
+                  <img src="./images/product2-1.jpg" className="w-100 mb-4 rounded-3 shadow" alt="aboutus" />
                 </div>
               </div>
               <div className="col-md-7 align-self-center">
