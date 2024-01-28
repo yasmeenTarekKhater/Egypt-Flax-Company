@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const AboutUs = () => {
   const aboutcontent = [
     "Worked hard with a growing passion for the industry and started developing our factory and business, many years after starting we develop machines and our products.",
-    "Continued after 23 years of experience with our hard work and efforts to enlarge our business, capacity and producing better quality products to be -now- one of the leading producers and manufacturers of flax.",
+    "Continued after 23 years of experience with our hard work and efforts to enlarge our business, capacity and produce better quality products to be -now- one of the leading producers and manufacturers of flax.",
     "Have an immense amount of experience formed over years of manufacturing flax products and continue to expand our practices every day.",
   ];
   useEffect(()=>{

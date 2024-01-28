@@ -23,9 +23,6 @@ const FlaxRowMaterial = (props) => {
       <div className="firstCatergoryContent mt-4 row justify-content-center gap-4 mx-auto">
         <div className=" col-11 col-lg-5" data-aos="fade-top">
           <div className="row categoryTypeTitleContainer">
-            <div className="col-1 categoryTypeTitleNumber h-75 px-1">
-              {TypeOne.id}
-            </div>
             <div className="col-10 categoryTypeTitle">
               <h5>{TypeOne.title}</h5>
               <span> {TypeOne.comming}</span>
@@ -52,9 +49,6 @@ const FlaxRowMaterial = (props) => {
         </div>
         <div className="col-11 col-lg-5" data-aos="fade-down">
           <div className="row categoryTypeTitleContainer">
-            <div className="col-1 categoryTypeTitleNumber h-75  px-1">
-              {TypeTwo.id}
-            </div>
             <div className="col-10 categoryTypeTitle">
               <h5>{TypeTwo.title}</h5>
               <span>{TypeTwo.comming}</span>

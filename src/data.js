@@ -4,7 +4,7 @@ export const flax_row_material=[
         header:"Flax raw material",
         title:"Scutched Flax",
         types:"We Have Two Types",
-        comming:"comming from long fiber",
+        comming:"from long fiber",
         use:["Spinning","Plumbing","Decoration"],
         image:"./images/product1-1.jpg"
     },
@@ -12,7 +12,7 @@ export const flax_row_material=[
         id:2,
         header:"Flax Raw material",
         title:"Flax Tow",
-        comming:"comming from short fiber",
+        comming:"from short fiber",
         types:[
             {
                 id:21,
@@ -80,6 +80,6 @@ export const cottonseed_flax={
 export const yarn_flax={
     id:9,
     title:"Flax yarn and twines",
-    description:"We produce flax yarn and twines from Nm 0.2: Nm 0.2 We can make bleach and twist on ball or spools according to customer's special requirements.",
+    description:"We produce flax yarn and twines from Nm 0.2: Nm 0.2 We can bleach and twist on balls or spools according to customer's special requirements.",
     image:["./images/product6-1.jpg","./images/product6-2.jpg"]
 };

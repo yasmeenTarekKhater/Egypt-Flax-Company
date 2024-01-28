@@ -22,9 +22,7 @@ const FlaxSliver = (props) => {
           return (
             <div className=" col-11 col-lg-5" key={product.id} data-aos="fade-top">
               <div className="row categoryTypeTitleContainer">
-                <div className="col-1 categoryTypeTitleNumber h-75  px-1">
-                  {product.id}
-                </div>
+                
                 <div className="col-10 categoryTypeTitle">
                   <h5>{product.title}</h5>
                 </div>

@@ -14,7 +14,6 @@ const OtherProducts = (props) => {
         <h3>{data.title}</h3>
         <div></div>
       </div>
-      <div className="col-1 categoryTypeTitleNumber h-75">{data.id}</div>
       <div className="firstCatergoryContent mt-4 mx-auto"data-aos='fade-top' >
         <div className="mt-4 categoryTypeContent">
           <div className="row mt-4 categoryTypeContent justify-content-center">
